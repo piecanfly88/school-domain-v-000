@@ -1,5 +1,5 @@
 class School
-  attr_reader :roaster
+  attr_reader :roaster, :school
 
   def initialize(school)
     @school = school
