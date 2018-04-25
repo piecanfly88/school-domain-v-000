@@ -1,12 +1,8 @@
 class School
-  attr_reader :roaster, 
+  attr_reader :roaster,
 
-  def initialize(school)
+  def initialize(roster)
     @roster = roster
   end
 
-  def roster=(roster)
-    @roster = roster
-    roster = {}
-  end
 end
