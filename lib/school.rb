@@ -15,7 +15,9 @@ class School
     roster[student_grade]
   end
 
-  def sort(grade)
-    roster[grade].sort
+  def sort
+    alph_order = {}
+    roster.each{|grade, students| alph_order[grade] = students.sort}
+    alph_order
   end
 end
