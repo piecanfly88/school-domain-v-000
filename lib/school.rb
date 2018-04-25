@@ -6,13 +6,13 @@ class School
     @roster = {}
   end
 
-  def add_student(student, student_grade)
-    roster[student_grade] ||= []
-    roster[student_grade] << student
+  def add_student(student, grade_level)
+    roster[grade_level] ||= []
+    roster[grade_level] << student
   end
 
-  def grade(student_grade)
-    roster[student_grade]
+  def grade(student_grade_level)
+    roster[student_grade_level]
   end
 
   def sort
